@@ -26,5 +26,24 @@ int main(void)
     int n = get_int("Сколько решёток нужно вывести? ");
 
     // Решение задачи:
+    if (n>=3 && n<=10)
+    	
+    for (int i=0; i<n; i++)
+     {
+         printf("#");
+     } 
+     printf("\n");
+
+     for (int i =0; i<n-1; i++)
+     {
+         printf("#");
+     } 
+     printf("\n");
+
+     for (int i =0; i<n-2; i++)
+     {
+         printf("#");
+     } 
+     printf("\n");
 
 }
