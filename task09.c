@@ -33,7 +33,7 @@ int main(void)
         {
         printf("Прошла %d минута.\n", n);
         }
-        else if (n%10==2 || n%10==3 || n%10==4)
+        else if (n%100==2 || n%100==3 || n%100==4)
         {
         printf("Прошло %d минуты.\n", n);
         }
@@ -55,47 +55,48 @@ int main(void)
         if (h%100>=11 && h%100<=19)
         {
          printf("Прошло %d часов", h);
-        }
+         }
 
-        else if (h%100 == 1)
+        else if (h%10 == 1)
         {
         printf("Прошел %d час", h);
-        }
 
+        }
         else if (h%100==2 || h%100==3 || h%100==4)
         {
          printf("Прошло %d часа", h);
-        }
 
+        }
         else
         {
           printf("Прошло %d часов", h);
+
         }
 
         if (m%100>=11 && m%100<=19)
         {
              printf(" %d минут.\n", m);
         }
-
+         else if (m%10==2 || m%10==3 || m%10==4)
+         {
+             printf(" %d минуты.\n", m); 
+         }
         else if (m==0)
         {
             printf(" %d минут\n", m);
         }
-
-        else if (m%100 == 1)
-        {
+         else if (m%10 == 1)
+         {
              printf(" %d минута.\n", m);
-        }
-
-        else if (m%100==2 || m%100==3 || m%100==4)
-        {
-             printf(" %d минуты.\n", m); 
-        }
-        else
-        {
-             printf(" %d минут.\n", m); 
-        }
+         }
+    
+          else
+          {
+               printf(" %d минут.\n", m); 
+          }
          
+
+    
 
         
     }
