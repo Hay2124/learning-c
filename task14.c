@@ -33,5 +33,23 @@ int main(void)
     int m = get_int("Сколько строк нужно вывести? ");
 
     // Решение задачи:
+    if (n>=1 && n<=10)
+    if (m>=1 && m<=10)
+
+    for (int i=0; i<m; i++)
+     {
+        for (int j=0; j<n; j++)
+     {
+         printf("#");
+     } 
+
+     for (int j=0; j<i; j++)
+     {
+         printf("+");
+     } 
+
+     printf("\n");
+    }
+
 
 }
